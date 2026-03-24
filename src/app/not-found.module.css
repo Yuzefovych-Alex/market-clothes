@@ -1,0 +1,103 @@
+.notFound {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  color: #111;
+}
+
+.notFound__header {
+  padding: 2rem 1rem 0.75rem;
+  text-align: center;
+}
+
+.notFound__brand {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.notFound__brand:hover {
+  opacity: 0.75;
+}
+
+.notFound__main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.notFound__code {
+  margin: 0;
+  font-size: clamp(3rem, 10vw, 5.25rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.notFound__title {
+  margin: 1rem 0 0;
+  font-size: clamp(1.05rem, 3vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.notFound__text {
+  margin: 0.9rem 0 0;
+  max-width: 30rem;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #4b4b4b;
+}
+
+.notFound__actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.notFound__primary,
+.notFound__secondary {
+  min-width: 9.5rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  border-radius: 0;
+  border: 1px solid #272727;
+  padding: 0 1rem;
+}
+
+.notFound__primary {
+  background: #272727;
+  color: #fff;
+}
+
+.notFound__secondary {
+  background: transparent;
+  color: #272727;
+}
+
+.notFound__primary:hover {
+  background: #161616;
+  border-color: #161616;
+}
+
+.notFound__secondary:hover {
+  background: #ececec;
+}

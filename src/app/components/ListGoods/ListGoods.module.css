@@ -1,0 +1,125 @@
+.listGoods {
+    width: 100%;
+    min-width: 0;
+}
+
+.listGoods__container {
+}
+
+.listGoods__container__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: clamp(0.75rem, 2vw, 1rem);
+}
+
+.listGoods__container__list__item {
+    margin: 0;
+}
+
+.listGoods__imageWrap {
+    position: relative;
+}
+
+.listGoods__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.listGoods__link:hover .listGoods__container__list__item__description__title {
+    opacity: 0.75;
+}
+
+.listGoods__container__list__item__image {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    min-height: 12rem;
+    max-height: min(70vh, 30rem);
+    background-color: #000;
+}
+
+.listGoods__soldTag {
+    position: absolute;
+    left: 50%;
+    bottom: 0.9rem;
+    transform: translateX(-50%);
+    background: #e6e6e6;
+    border: 1px solid #d7d7d7;
+    padding: 0.38rem 1rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+}
+
+.listGoods__filter {
+    margin: 0 0 1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #525252;
+}
+
+.listGoods__filterLink {
+    color: inherit;
+    font-weight: 600;
+}
+
+.listGoods__filterLink:hover {
+    opacity: 0.75;
+}
+
+.listGoods__filterSep {
+    opacity: 0.6;
+}
+
+.listGoods__empty {
+    margin: 0;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #737373;
+}
+
+.listGoods__loading,
+.listGoods__error {
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    padding: 2rem 1rem;
+}
+
+.listGoods__error {
+    color: #b91c1c;
+}
+
+.listGoods__hint {
+    text-align: center;
+    font-size: 0.65rem;
+    line-height: 1.6;
+    color: #525252;
+    padding: 0 1rem 2rem;
+}
+
+.listGoods__code {
+    font-size: 0.6rem;
+    padding: 0.1rem 0.25rem;
+    background: #f5f5f5;
+    border-radius: 2px;
+}
+
+.listGoods__container__list__item__description {
+    text-align: center;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.listGoods__container__list__item__description__title {
+
+}
+
+.listGoods__container__list__item__description__price {
+}

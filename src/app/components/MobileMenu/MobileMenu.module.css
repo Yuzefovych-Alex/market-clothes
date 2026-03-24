@@ -1,0 +1,114 @@
+.mobileMenu__toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobileMenu__toggle {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    top: 0.05rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    border: 0;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.34rem;
+    cursor: pointer;
+  }
+
+  .mobileMenu__toggle span {
+    width: 1.35rem;
+    height: 2px;
+    background: #141414;
+    display: block;
+  }
+
+  .mobileMenu__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.78);
+    z-index: 80;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .mobileMenu__panel {
+    width: min(100%, 42rem);
+    background: #f7f7f7;
+    border: 1px solid #d9d9d9;
+    position: relative;
+    padding: 1.5rem 0 2rem;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.28);
+  }
+
+  .mobileMenu__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .mobileMenu__close span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.9rem;
+    height: 2px;
+    background: #141414;
+    display: block;
+    transform-origin: center;
+  }
+
+  .mobileMenu__close span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .mobileMenu__close span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .mobileMenu__brand {
+    margin: 0;
+    text-align: center;
+    font-size: 1.95rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    opacity: 0.08;
+    font-weight: 700;
+    text-transform: uppercase;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .mobileMenu__list {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    border-top: 1px solid #ececec;
+  }
+
+  .mobileMenu__item {
+    margin: 0;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+  }
+
+  .mobileMenu__link {
+    display: block;
+    padding: 0.74rem 0.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1b1b1b;
+  }
+}
